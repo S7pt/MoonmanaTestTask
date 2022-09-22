@@ -38,7 +38,7 @@ namespace MoonmanaTestTask.Levels
 			_blender.Setup();
 			_goalVisuals.Setup(currentLevel.TargetColor);
 			_colorManager.Setup(currentLevel.TargetColor);
-			_UIManager.Setup(StartNextLevel);
+			_UIManager.Setup();
 			_UIManager.NextLevelButton.onClick.AddListener(StartNextLevel);
 			_handler.Setup(currentLevel.Margin);
 		}

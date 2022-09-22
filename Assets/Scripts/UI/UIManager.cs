@@ -31,7 +31,7 @@ namespace MoonmanaTestTask.UI
 			_flowHandler.LevelCompleted += OnLevelCompleted;
 		}
 
-		public void Setup(UnityAction nextLevelCallback)
+		public void Setup()
 		{
 			_levelCompletedPanel.SetActive(false);
 			SetSimilarityPercent(INITIAL_SIMILARITY_PERCENT);
@@ -76,7 +76,6 @@ namespace MoonmanaTestTask.UI
 			_blender.StartedMixing -= OnStartedMixing;
 			_flowHandler.LevelCompleted -= OnLevelCompleted;
 			_blender.CompletedMixing -= OnCompletedMixing;
-			NextLevelButton.onClick.RemoveAllListeners();
 		}
 	}
 }
